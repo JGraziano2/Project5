@@ -61,7 +61,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
       // no need to call super; it'd be wrong, anyway.
       return _y.template( audioNoteViewHTML, {
         "NOTE_NAME": self._note.name,
-		"STATUS": self._note.status,
+		"STATUS": self._note.status, // Provides value to %STATUS% placeholder
         "NOTE_CONTENTS": self._note.textContents,
         "BACK": _y.T( "BACK" ),
         "DELETE_NOTE": _y.T( "app.nev.DELETE_NOTE" )

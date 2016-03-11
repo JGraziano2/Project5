@@ -62,7 +62,7 @@ define( [ "yasmf", "app/models/noteStorageSingleton",
     self.render = function() {
       return _y.template( imageNoteViewHTML, {
         "NOTE_NAME": self._note.name,
-		"STATUS": self._note.status,
+		"STATUS": self._note.status, // Provides value to %STATUS% placeholder
         "NOTE_CONTENTS": self._note.textContents,
         "BACK": _y.T( "BACK" ),
         "DELETE_NOTE": _y.T( "app.nev.DELETE_NOTE" )

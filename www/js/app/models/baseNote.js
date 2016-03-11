@@ -1,5 +1,9 @@
 /**
  *
+ *	Edited By: Jacobi Graziano
+ *	Edit Date: 3/10/16
+ *	Changes: Added creation of status object property
+ *
  * Base Note Model
  *
  * baseNote.js
@@ -53,7 +57,7 @@ define( [ "yasmf" ], function( _y ) {
     // register the notifications the model can send
     self.registerNotification( "uidChanged" );
     self.registerNotification( "nameChanged" );
-	self.registerNotification( "statusChanged" );
+	self.registerNotification( "statusChanged" ); // provides notification to change modified date when status is changed
     self.registerNotification( "textContentsChanged" );
     self.registerNotification( "mediaContentsChanged" );
     self.registerNotification( "unitValueChanged" );
@@ -124,7 +128,9 @@ define( [ "yasmf" ], function( _y ) {
       set: self.setName,
       configurable: true
     } );
-	/* Status object */
+	/* 
+	Sets up status object for the display of status
+	 */
 	self._status = "";
     self.getStatus = function() {
       return self._status;
