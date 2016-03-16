@@ -1,4 +1,8 @@
 /*!
+ * Editied by: Jacobi Graziano
+ * Edit date: 3/16/16
+ * Changes: Added styling for status icon glyphs.
+ *
  * YASMF-Next Styling
  *
  * yasmf.css
@@ -1219,6 +1223,23 @@ div {
   -ms-mask-image: url("./yasmf-assets/menu@2x.png");
   -o-mask-image: url("./yasmf-assets/menu@2x.png");
   mask-image: url("./yasmf-assets/menu@2x.png"); }
+  
+/* glyph for followUp */
+.ui-glyph-followUp {
+  -webkit-mask-image: url("./yasmf-assets/push-pin-transparent.png");
+  -moz-mask-image: url("./yasmf-assets/push-pin-transparent.png");
+  -ms-mask-image: url("./yasmf-assets/push-pin-transparent.png");
+  -o-mask-image: url("./yasmf-assets/push-pin-transparent.png");
+  mask-image: url("./yasmf-assets/push-pin-transparent.png"); 
+}
+/* glyph for archive */
+.ui-glyph-archive {
+  -webkit-mask-image: url("./yasmf-assets/file-cabinet-transparent.png");
+  -moz-mask-image: url("./yasmf-assets/file-cabinet-transparent.png");
+  -ms-mask-image: url("./yasmf-assets/file-cabinet-transparent.png");
+  -o-mask-image: url("./yasmf-assets/file-cabinet-transparent.png");
+  mask-image: url("./yasmf-assets/file-cabinet-transparent.png"); 
+}
 
 /*****************************************************************************
  *

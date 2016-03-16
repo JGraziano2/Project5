@@ -1,5 +1,9 @@
 <html>
 <!--
+		Edited By: Jacobi Graziano
+        Edit Date: 3/10/16
+        Changes: Added drop down for status selection.
+        
       imageNoteEditView.html
       @author Kerri Shotts
       @version 1.0.0
@@ -30,10 +34,10 @@
     <!-- Place a drop down selector for status changes -->
     <div class="ui-bar-button-group ui-align-right"> 
     	<select class="statusDropDown"> 
-	        <option value="%STATUS%">Current: %STATUS%</option>
+	        <option value="%STATUS%">Current: %STATUS%</option> <!-- %STATUS% keeps status from selection and dispays it as the current selection. -->
             <option value="">Clear status</option>
-  	        <option value="Follow Up">Follow Up</option>
-            <option value="Archive">Archive</option>
+  	        <option value="followUp">Follow Up</option>
+            <option value="archive">Archive</option>
         </select>
     </div>
     <div class="ui-bar-button-group ui-align-right">

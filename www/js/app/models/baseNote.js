@@ -128,9 +128,11 @@ define( [ "yasmf" ], function( _y ) {
       set: self.setName,
       configurable: true
     } );
+	
 	/* 
 	Sets up status object for the display of status
-	 */
+	*/
+		 
 	self._status = "";
     self.getStatus = function() {
       return self._status;
@@ -145,6 +147,8 @@ define( [ "yasmf" ], function( _y ) {
       set: self.setStatus,
       configurable: true
     } );	
+	
+	
     /**
      * Instead of the line count, we'll use a generic "unit". For the BaseNote, this
      * is still a line count, but other note types may use it differently.

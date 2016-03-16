@@ -1,7 +1,7 @@
 /**
  * Editied by: Jacobi Graziano
- * Edit date: 3/10/16
- * Changes: Added styling for status area on note view.
+ * Edit date: 3/16/16
+ * Changes: Changed styling for status to glyphs
  *
  * Filer v5 Styles
  *
@@ -199,7 +199,7 @@ body.android {
 .android .noteListView .ui-list-item:active .note-name {
   color: #242424;
 }
-/* position and style the status*/
+/* position and style the status
 .note-status {
   font-size: 13px;
   line-height: 20px;
@@ -208,6 +208,25 @@ body.android {
   float: left;
   padding-left: 10px;
 }
+*/
+
+/* Styling for status icon location and size */
+
+.note-status {
+  float: left;
+  height: 30px;
+  width: 30px;
+  padding-left: 25px;
+}
+/* Change color of followUp icon to red */
+.note-status.ui-glyph-followUp {
+  background-color: red;
+}
+/* Change color of archive icon to black */
+.note-status.ui-glyph-archive {
+  background-color: black;
+}
+
 /* position and style the modified date */
 
 .noteListView .ui-list-item .note-modified-date {
